@@ -11,8 +11,7 @@ This Ansible Playbook configures software development environment for my Mac. Ba
      - Install Ansible: `python3 -m pip install --user ansible`
      - See [Ansible Docs](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible) for details, if needed
 
-  3. Clone or download this repository to your local drive.
-  
+  3. Clone this repository: `git clone https://github.com/miksula/mac-setup`
   4. Run `ansible-playbook main.yml` inside this directory. 
 
 ## Use with a remote Mac
