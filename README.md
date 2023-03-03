@@ -12,7 +12,7 @@ This Ansible Playbook configures software development environment for my Mac. Ba
      - Run the following command to add Python 3 to your $PATH: `export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"`
      - See [Ansible Docs](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible) for details, if needed
 
-  3. Clone this repository: `git clone https://github.com/miksula/mac-setup ~/Projects`
+  3. Clone this repository: `git clone https://github.com/miksula/mac-setup ~/Projects/mac-setup`
   4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles
   5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. 
 
@@ -37,7 +37,8 @@ If you need to supply an SSH password (if you don't use SSH keys), make sure to 
 
 ## Running a specific set of tagged tasks
 
-You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are: `personal`.
+You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are: `personal`,
+`company`.
 
 ```
 ansible-playbook main.yml -K --tags "personal,other"

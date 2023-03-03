@@ -29,6 +29,6 @@
     - geerlingguy.mac.homebrew
 
   tasks:
-    - include: tasks/git-config.yml
-    - include: tasks/oh-my-zsh.yml
-    - include: tasks/npm-packages.yml
+    - include_tasks: tasks/git-config.yml
+    - include_tasks: tasks/oh-my-zsh.yml
+    - include_tasks: tasks/npm-packages.yml
