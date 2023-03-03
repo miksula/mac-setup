@@ -1,6 +1,6 @@
 # Mac Development Setup
 
-This Ansible Playbook configures software development environment for my Mac. Based on [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook), and [ThePrimeagen/ansible](https://github.com/ThePrimeagen/ansible).
+This Ansible Playbook configures software development environment for my Mac. Based on [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook), wih my modifications.
 
 ## Installation
 
