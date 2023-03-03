@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="minimal"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-plugins=(macos git globalias z zsh-autosuggestions)
+plugins=(macos git z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
