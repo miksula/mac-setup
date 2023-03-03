@@ -1,0 +1,29 @@
+- name: Company
+  git_config:
+    name: user.email
+    scope: global
+    value: "mika.vallittu@delome.fi"
+  tags:
+  - company
+- name: Git company setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "Mika Vallittu"
+  tags:
+  - company
+
+- name: Git personal setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "mika.vallittu@gmail.com"
+  tags:
+  - personal
+- name: Git personal setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "Mika Vallittu"
+  tags:
+  - personal  

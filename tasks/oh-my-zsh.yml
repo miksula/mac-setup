@@ -1,0 +1,16 @@
+- name: Clone oh-my-zsh repo
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: ~/.oh-my-zsh
+    update: false
+
+- name: Clone zsh-autosuggestions repo
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    update: false
+
+- name: Copy .zshrc to home dir
+  copy:
+    src: files/.zshrc
+    dest: ~/ 

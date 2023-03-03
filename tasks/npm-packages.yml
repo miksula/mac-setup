@@ -1,0 +1,4 @@
+- name: Install serve
+  npm:
+    name: serve
+    global: yes

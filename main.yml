@@ -1,0 +1,34 @@
+- hosts: all
+
+  vars:
+    homebrew_installed_packages:
+      - awscli
+      - jq
+      - node
+      - nvm
+      - wget
+      - terraform
+      - tree
+    homebrew_taps:
+      - homebrew/core
+      - homebrew/cask
+      - homebrew/cask-fonts
+    homebrew_cask_appdir: /Applications
+    homebrew_cask_apps:
+      - monitorcontrol
+      - rectangle
+      - docker
+      - firefox
+      - font-fira-code
+      - google-chrome
+      - textmate
+      - visual-studio-code
+      
+  roles:
+    - elliotweiser.osx-command-line-tools
+    - geerlingguy.mac.homebrew
+
+  tasks:
+    - include: tasks/git-config.yml
+    - include: tasks/oh-my-zsh.yml
+    - include: tasks/npm-packages.yml
