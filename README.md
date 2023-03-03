@@ -9,6 +9,7 @@ This Ansible Playbook configures software development environment for my Mac. Ba
 
      - Verify that Pip is installed: `python3 -m pip -V`
      - Install Ansible: `python3 -m pip install --user ansible`
+     - Run the following command to add Python 3 to your $PATH: `export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"`
      - See [Ansible Docs](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible) for details, if needed
 
   3. Clone this repository: `git clone https://github.com/miksula/mac-setup ~/Projects`
