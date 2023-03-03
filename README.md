@@ -13,7 +13,8 @@ This Ansible Playbook configures software development environment for my Mac. Ba
      - See [Ansible Docs](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible) for details, if needed
 
   3. Clone this repository: `git clone https://github.com/miksula/mac-setup ~/Projects`
-  4. Run `ansible-playbook main.yml` inside this directory. 
+  4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles
+  5. Run `ansible-playbook main.yml` inside this directory. 
 
 ## Use with a remote Mac
 
